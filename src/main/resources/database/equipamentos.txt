@@ -1,0 +1,4 @@
+1;Equipamento 1E;1;Entrada;
+2;Equipamento 1S;1;Saída;
+3;Equipamento 2E;2;Entrada;
+4;Equipamento 2S;2;Saída;

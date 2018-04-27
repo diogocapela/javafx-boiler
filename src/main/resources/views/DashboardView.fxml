@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diogocapela.javafxboiler.controllers.DashboardController">
+    <center>
+        <HBox alignment="TOP_CENTER">
+            <children>
+                <VBox alignment="TOP_CENTER" minWidth="300.0" style="-fx-border-color: black;">
+                    <children>
+                        <Label text="Serialization" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets bottom="25.0" top="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#handleDeserializeData" text="Load State" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Button>
+                  <Label text="(Deserialize Data)">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                        <Button mnemonicParsing="false" onAction="#handleSerializeData" text="Save State" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Button>
+                  <Label text="(Serialize Data)" />
+                    </children>
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                </VBox>
+                <VBox alignment="TOP_CENTER" minWidth="300.0" style="-fx-border-color: black;">
+                    <children>
+                        <Label text="File System">
+                            <VBox.margin>
+                                <Insets bottom="25.0" top="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#handleLoadAreasRestritas" text="Load Áreas Restritas" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Button>
+                  <Label text="(areas_restritas.txt)">
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </Label>
+                        <Button mnemonicParsing="false" onAction="#handleLoadColaboradores" text="Load Colaboradores" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Button>
+                  <Label text="(colaboradores.txt)">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                        <Button mnemonicParsing="false" onAction="#handleLoadEquipamentos" text="Load Equipamentos" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Button>
+                  <Label text="(equipamentos.txt)">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </HBox.margin>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+    <top>
+        <Label text="Dashboard" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+            <BorderPane.margin>
+                <Insets bottom="10.0" top="20.0" />
+            </BorderPane.margin>
+        </Label>
+    </top>
+    <bottom>
+        <Label fx:id="message" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="10.0" top="10.0" />
+            </BorderPane.margin>
+        </Label>
+    </bottom>
+</BorderPane>

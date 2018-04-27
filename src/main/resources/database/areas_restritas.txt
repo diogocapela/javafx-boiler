@@ -1,0 +1,2 @@
+1;Edifício 1;Porto;500;
+2;Capela 2;Lisboa;200;
